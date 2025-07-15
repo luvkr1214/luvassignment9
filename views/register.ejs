@@ -1,0 +1,41 @@
+<%- include('partials/header')%>
+
+<div class="container mt=5">
+        <h1>Register</h1>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+                        <form action="/register" method="POST">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="username" id="email" required>
+                            </div><br>
+
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input
+  type="password"
+  id="password"
+  name="password"
+  class="form-control"
+  placeholder="Enter Password"
+  required
+  pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+  title="Password must be at least 8 characters long, include letters, a number, and a special character."
+><br>
+                                <button type="button" onclick="togglePassword()">Show Password</button>
+                            </div><br>
+
+                        <button type="submit" class="btn btn-dark">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>
