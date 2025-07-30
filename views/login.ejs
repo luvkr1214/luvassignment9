@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Login</h1>
+  <% if (error) { %>
+    <div class="alert alert-danger"><%= error %></div>
+  <% } %>
+  <form action="/login" method="POST">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" name="username" id="email" required>
+    </div><br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="form-control" required><br>
+      <button type="button" onclick="togglePassword(this)">Show Password</button>
+    </div><br>
+    <button type="submit" class="btn btn-dark">Login</button>
+  </form>
+</div>
+
+<script>
+  function togglePassword(button) {
+    const password = document.getElementById("password");
+    password.type = password.type === "password" ? "text" : "password";
+    button.textContent = password.type === "password" ? "Show Password" : "Hide Password";
+  }
+</script>
+
+</body>
+</html>

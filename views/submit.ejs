@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container ">
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x mb-3"></i>
+    <h1 class="display-3">Submit a Secret</h1>
+    <p class="lead">Don't keep your secrets, share them anonymously!</p>
+    <form action="/submit" method="POST">
+      <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?" required>
+      <button type="submit" class="btn btn-dark mt-3">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

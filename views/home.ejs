@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron centered">
+  <div class="container text-center">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Secrets</h1>
+    <p class="lead">Don't keep your secrets, share them anonymously!</p>
+    <a class="btn btn-light btn-lg" href="/register">Register</a>
+    <a class="btn btn-dark btn-lg" href="/login">Login</a>
+  </div>
+</div>
+
+<% if (message) { %>
+  <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+    <%= message %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% } %>
+
+<script>
+  setTimeout(() => {
+    const alertEl = document.querySelector(".alert");
+    if (alertEl) {
+      alertEl.classList.remove("show");
+      alertEl.classList.add("hide");
+    }
+  }, 3000);
+</script>
+
+</body>
+</html>

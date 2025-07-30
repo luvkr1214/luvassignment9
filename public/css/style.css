@@ -1,0 +1,142 @@
+body {
+  background-color: #e8ecef;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.centered {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #000;
+  word-break: break-word;
+}
+
+.secret-text i.fa-edit {
+  margin-left: 10px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.secret-card {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.secret-card:hover {
+  transform: scale(1.01);
+}
+
+.secret-card button {
+  margin-top: 10px;
+}
+
+/* Responsive layout — no grid, single-column */
+.secret-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+@media (max-width: 1023px) {
+  .container,
+  .jumbotron,
+  .centered,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .secret-text {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .display-3, .display-5, h1 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .container,
+  .jumbotron,
+  .centered,
+  footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .secret-text {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+
+  h1, .display-3, .display-5 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container,
+  .jumbotron,
+  .centered,
+  footer {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .secret-text {
+    font-size: 1.6rem;
+    padding: 8px 10px;
+  }
+
+  h1, .display-3, .display-5 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.7rem;
+    width: 100%;
+  }
+
+  footer small {
+    font-size: 1.5rem;
+  }
+}
