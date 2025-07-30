@@ -45,7 +45,7 @@ body {
   margin-top: 10px;
 }
 
-/* Responsive layout — no grid, single-column */
+
 .secret-container {
   display: flex;
   flex-direction: column;
